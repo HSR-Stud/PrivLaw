@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%
 % Dokumentinformationen %
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\title{CM_PrivLaw}
+\title{CM\_PrivLaw\_EN}
 \author{\href{mailto:l1leuenb@hsr.ch}{Lukas Leuenberger}}
 \newcommand{\authoremail}{\href{mailto:l1leuenb@hsr.ch}{l1leuenb@hsr.ch} }
 \newcommand{\versioninfo}{$ V1.0 $}
 
-\documentclass[10pt,twoside,a4paper,fleqn]{scrartcl}
+\documentclass[10pt,twoside,a4paper,fleqn,twocolumn]{scrartcl}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Standard Header für 
 % - Makros 
@@ -16,12 +16,20 @@
 \include{header/zusammenfassung}
 %\include{header/codelayout}
 
+% Compact item and compact enum
+\usepackage{paralist}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{document}
+\begin{document}	
+\selectlanguage{english}
 \maketitle
 \tableofcontents
 \thispagestyle{empty}
+\newpage \ \\ \ \\
+\newpage
+\input{sections/Introduction}
+\input{sections/Copyright}
 
 \end{document}
